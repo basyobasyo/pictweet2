@@ -1,3 +1,3 @@
 class Tweet < ApplicationRecord
-  resources :tweets, only: :index
+  validates :text, presence: true  
 end
